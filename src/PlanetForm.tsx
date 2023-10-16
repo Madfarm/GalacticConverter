@@ -4,7 +4,10 @@ export default function PlanetForm({ weight, setWeight, planet, setPlanet, setRe
     function handleSubmit(e) {
         e.preventDefault();
 
-        console.log(e.targte.value);
+        switch(planet) {
+            case "Earth":
+                setResult(weight);
+        }
     }
 
 
