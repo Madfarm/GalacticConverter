@@ -11,7 +11,7 @@ function App() {
     
     <div id="app">
       
-      <h1>Calculate the weight of an object on a planet</h1>
+      <h1>Calculate the weight of an object on another planet</h1>
       
       <PlanetForm 
        weight={weight}
@@ -25,7 +25,7 @@ function App() {
       {result && 
         <div id="result">
           <p>
-            It would weigh {result} on {planet}!
+            That's {result} lb on {planet}!
           </p>
         </div> 
       }

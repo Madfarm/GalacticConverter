@@ -14,7 +14,7 @@ export default function PlanetForm({ weight, setWeight, planet, setPlanet, setRe
     return (
         <form id="form" onSubmit={handleSubmit}>
             <label>
-                Weight:
+                Weight in pounds:
                 <input
                     value={weight}
                     type="number"
@@ -29,6 +29,11 @@ export default function PlanetForm({ weight, setWeight, planet, setPlanet, setRe
                     <option value="Earth">Earth</option>
                     <option value="Mars">Mars</option>
                     <option value="Venus">Venus</option>
+                    <option value="Mercury">Mercury</option>
+                    <option value="Saturn">Saturn</option>
+                    <option value="Jupiter">Jupiter</option>
+                    <option value="Neptune">Neptune</option>
+                    <option value="Uranus">Uranus</option>
                 </select>
             </label>
             <button type="submit">Submit</button>
