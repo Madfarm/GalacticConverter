@@ -32,6 +32,11 @@ a:hover {
   border: 1px solid red;
 }
 
+#form {
+  border: 1px solid blue;
+  height: 30vh;
+}
+
 body {
   margin: 0;
   display: flex;
