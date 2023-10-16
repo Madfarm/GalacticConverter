@@ -3,7 +3,7 @@ import './App.css'
 import PlanetForm from './PlanetForm.tsx';
 
 function App() {
-  const [result, setResult] = useState(28);
+  const [result, setResult] = useState(null);
   const [planet, setPlanet] = useState("Earth");
 
   return (
