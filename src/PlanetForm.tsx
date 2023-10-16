@@ -7,6 +7,30 @@ export default function PlanetForm({ weight, setWeight, planet, setPlanet, setRe
         switch(planet) {
             case "Earth":
                 setResult(weight);
+                break;
+            case "Mars":
+                setResult(weight * .38);
+                break;
+            case "Mercury":
+                setResult(weight * .38);
+                break;
+            case "Venus":
+                setResult(weight * .91);
+                break;
+            case "Jupiter":
+                setResult(weight * 2.34);
+                break;
+            case "Saturn":
+                setResult(weight * 1.06);
+                break;
+            case "Uranus":
+                setResult(weight * .92);
+                break;
+            case "Neptune":
+                setResult(weight * 1.19);
+                break;
+            default:
+                setResult(weight);
         }
     }
 
