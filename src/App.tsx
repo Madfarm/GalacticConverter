@@ -9,6 +9,7 @@ function App() {
   return (
     
     <div id="app">
+      {/* <img src="/src/assets/uniiiiiiiiiiii.gif"></img> */}
       <h1>Calculate the weight of an object on a planet</h1>
       
       <PlanetForm />
