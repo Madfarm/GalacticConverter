@@ -53,7 +53,9 @@ a:hover {
 
 #form {
   /* border: 1px solid blue; */
-  height: 30vh;
+  display: flex;
+  gap: 5vw;
+  z-index: 21;
 }
 
 /* body {

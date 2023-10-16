@@ -13,7 +13,11 @@ function App() {
       
       <h1>Calculate the weight of an object on a planet</h1>
       
-      <PlanetForm weight={weight} setWeight={setWeight}/>
+      <PlanetForm 
+       weight={weight}
+       setWeight={setWeight} 
+       planet={planet} 
+       setPlanet={setPlanet}/>
 
       
       {result && 
