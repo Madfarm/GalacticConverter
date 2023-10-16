@@ -55,6 +55,7 @@ a:hover {
 #form {
   /* border: 1px solid blue; */
   display: flex;
+  justify-content: space-around;
   gap: 5vw;
   z-index: 21;
 }
