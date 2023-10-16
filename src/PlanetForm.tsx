@@ -1,8 +1,15 @@
 import { useState } from 'react'
 
-export default function PlanetForm({ weight, setWeight, planet, setPlanet }) {
+export default function PlanetForm({ weight, setWeight, planet, setPlanet, setResult }) {
+    function handleSubmit(e) {
+        e.preventDefault();
+
+        console.log(e.targte.value);
+    }
+
+
     return (
-        <form id="form">
+        <form id="form" onSubmit={handleSubmit}>
             <label>
                 Weight:
                 <input
@@ -15,7 +22,7 @@ export default function PlanetForm({ weight, setWeight, planet, setPlanet }) {
 
             <label>
                 Planet:
-                <select>
+                <select value={planet} onChange={e => setPlanet(e.target.value)}>
                     <option value="Earth">Earth</option>
                     <option value="Mars">Mars</option>
                     <option value="Venus">Venus</option>

@@ -17,7 +17,9 @@ function App() {
        weight={weight}
        setWeight={setWeight} 
        planet={planet} 
-       setPlanet={setPlanet}/>
+       setPlanet={setPlanet}
+       setResult={setResult}
+       />
 
       
       {result && 
