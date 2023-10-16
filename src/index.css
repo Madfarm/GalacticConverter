@@ -47,6 +47,7 @@ a:hover {
 
 #result {
   /* border: 1px solid red; */
+  margin-top: 20vh;
   text-align: center;
   font-size: 32px;
 }
