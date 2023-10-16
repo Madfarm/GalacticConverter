@@ -25,7 +25,7 @@ function App() {
       {result && 
         <div id="result">
           <p>
-            That's {result} lb on {planet}!
+            That's {result} lbs on {planet}!
           </p>
         </div> 
       }

@@ -34,6 +34,10 @@ export default function PlanetForm({ weight, setWeight, planet, setPlanet, setRe
         }
     }
 
+    function planetChange(e) {
+        setPlanet(e.target.value);
+        setResult(null);
+    }
 
     return (
         <form id="form" onSubmit={handleSubmit}>
@@ -49,7 +53,7 @@ export default function PlanetForm({ weight, setWeight, planet, setPlanet, setRe
 
             <label>
                 Planet:
-                <select value={planet} onChange={e => setPlanet(e.target.value)}>
+                <select value={planet} onChange={e => planetChange(e)}>
                     <option value="Earth">Earth</option>
                     <option value="Mars">Mars</option>
                     <option value="Venus">Venus</option>
