@@ -3,7 +3,8 @@ import './App.css'
 import PlanetForm from './PlanetForm.tsx';
 
 function App() {
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState(28);
+  const [planet, setPlanet] = useState("Earth");
 
   return (
     
@@ -13,12 +14,13 @@ function App() {
       <PlanetForm />
 
       
-
-      <div id="result">
-        <p>
-          {result}
-        </p>
-      </div>
+      {result && 
+        <div id="result">
+          <p>
+            It would weigh {result} on {planet}!
+          </p>
+        </div> 
+      }
     </div>
     
   )
